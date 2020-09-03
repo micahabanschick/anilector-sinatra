@@ -1,4 +1,4 @@
-require './config/environment'
+require_relative '../../config/environment'
 require './app/models/sample_model'
 
 class ApplicationController < Sinatra::Base
