@@ -6,14 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <style>
+        body {
+            color: black;
+            background: linear-gradient(blue, black);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            height: 450px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-image: url('/images/cowboy-bebop.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }   
+
+        header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+        }
+
+        img#joseph {
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            /* z-index: 2; */
+        }
+
+        img#giorno {
+            position: absolute;
+            left: 80px;
+            top: 200px;
+            /* z-index: 3; */
+        }
+
+        img#code-geass {
+            position: absolute;
+            right: 150px;
+            top: 200px;
+            /* z-index: 4; */
+        }
+
+        img#death-note {
+            position: absolute;
+            right: 300px;
+            top: 20px;
+            /* z-index: 5; */
+        }
+
+        img#fairy-tail {
+            position: absolute;
+            left: 200px;
+            top: 50px;
+        }
+
+        img#attack-on-titan {
+            position: absolute;
+            left: 350px;
+            top: 150px;
+        }
+
+        main {
+            height: 600px;
+            text-align: center;
+            /* background-image: url('/images/guitar_by_giancarlo-duarte.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 50px 100px;
+            grid-template-columns: auto auto auto auto;
+            /* background-color: #2196F3; */
+            padding: 10px;
+        }
+        
+        .grid-item {
+            background-color: rgba(80, 49, 49, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #emblem {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Test 1</h1>
+        <img id="joseph" src="/images/jojo-joseph.png">
+        <img id="giorno" src="/images/jojo-giorno.jpeg">
+        <img id="code-geass" src="/images/code-geass.jpeg">
+        <img id="death-note" src="/images/death-note.jpeg">
+        <img id="fairy-tail" src="/images/fairy-tail.jpeg">
+        <img id="attack-on-titan" src="/images/attack-on-titan.jpeg">
     </header>
     <main>
         <h1>Test 2</h1>
+        <form action="/results" method="post">
+            <label for="genre-1">Genre 1:</label>
+            <input type="text" name="genre-1" id="genre-1">
+            <label for="genre-2">Genre 2:</label>
+            <input type="text" name="genre-2" id="genre-2">
+            <label for="genre-3">Genre 1:</label>
+            <input type="text" name="genre-3" id="genre-3">
+
+            <input type="submit" value="Submit">
+        </form>
     </main>
   <%# <script src="js/scripts.js"></script> %>
 </body>

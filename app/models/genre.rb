@@ -1,5 +1,6 @@
-class Anilector::Genre 
+class Anilector::Genre < ActiveRecord::Base
 
+    has_and_belongs_to_many :animes
     attr_accessor :name, :details
 
     @@all = []
