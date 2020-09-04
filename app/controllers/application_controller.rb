@@ -13,4 +13,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  post "/results" do  
+    @genres = params.each{|k,v| Anilector::Genre.find_or_create_by(name: v)}
+    puts @genre
+    erb :results 
+  end 
+
 end
